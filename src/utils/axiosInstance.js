@@ -3,7 +3,7 @@ import axios from "axios";
 
 // 기본 API URL 설정
 const axiosInstance = axios.create({
-  baseURL: "http://isaiah-dev.ddns.net:18080/api",
+  baseURL: "/api",
   // baseURL: "http://localhost:8080/api", 
   timeout: 600000, // 10분 이상 걸리면 타임아웃
 });
