@@ -70,7 +70,7 @@ export default function FindIdPage() {
     setShowModal(false);
 
     try {
-      const response = await axiosInstance.get("/members/find-id", {
+      const response = await axiosInstance.get("/member/find-id", {
         params: { email }, // GET 요청에 쿼리 파라미터로 이메일 전달
       });
 
