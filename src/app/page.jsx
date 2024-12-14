@@ -88,63 +88,73 @@ export default function Home() {
 
 
         {/* Features Section */}
-        <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-12 md:py-24">
-          {/* First Feature */}
-          <div className="p-8 border border-yellow-400 rounded-tl-none rounded-tr-[24px] rounded-bl-[24px] rounded-br-none flex flex-col justify-center h-[200px] md:h-[250px] lg:h-[300px]">
-            <h3 className="font-medium text-left text-sm md:text-lg lg:text-2xl">
+        <section className="max-w-6xl mx-auto grid grid-cols-3 gap-4 md:gap-6 py-12 md:py-16 lg:py-24 px-0 md:px-4">
+          {/* First Section: Text on the left (75%) and Image on the right (25%) */}
+          <div
+            className="p-4 md:p-6 lg:p-8 border border-yellow-400 rounded-tl-none rounded-tr-[24px] rounded-bl-[24px] rounded-br-none flex flex-col justify-center col-span-3 md:col-span-2 h-[150px] md:h-[250px] lg:h-[300px]"
+          >
+            <h3 className="font-medium text-left text-lg md:text-xl lg:text-2xl">
               개인 루틴 설정과 작은 성취감 제공
             </h3>
-            <p className="text-gray-600 mt-4 text-left text-xs md:text-sm lg:text-lg font-light">
+            <p className="text-gray-600 mt-2 md:mt-3 lg:mt-4 text-left text-sm md:text-base lg:text-lg font-light">
               작은 성취와 꾸준한 루틴을 통해 <br />
               자존감을 쌓아가며 새롭게 성장하세요.
             </p>
           </div>
 
-          <div className="px-8 pt-8 pb-0 border border-yellow-400 rounded-tl-[24px] rounded-br-[24px] rounded-tr-none rounded-bl-none flex justify-center items-center h-[200px] md:h-[250px] lg:h-[300px]">
+          <div
+            className="px-4 md:px-6 lg:px-8 pt-4 md:pt-6 lg:pt-8 pb-0 border border-yellow-400 rounded-tl-[24px] rounded-br-[24px] rounded-tr-none rounded-bl-none flex justify-center items-center col-span-3 md:col-span-1 h-[150px] md:h-[250px] lg:h-[300px]"
+          >
             <img
               src="/images/01_daily.svg"
               alt="이미지 설명"
-              className="h-[150px] md:h-[200px] lg:h-[250px] w-auto"
+              className="h-[120px] md:h-[200px] lg:h-[250px] w-auto"
             />
           </div>
 
-          {/* Second Feature */}
-          <div className="px-8 pt-8 pb-0 border border-yellow-400 rounded-tl-[24px] rounded-br-[24px] rounded-tr-none rounded-bl-none flex justify-center items-center h-[200px] md:h-[250px] lg:h-[300px]">
+          {/* Second Section: Image on the left (25%) and Text on the right (75%) */}
+          <div
+            className="px-4 md:px-6 lg:px-8 pt-4 md:pt-6 lg:pt-8 pb-0 border border-yellow-400 rounded-tl-[24px] rounded-br-[24px] rounded-tr-none rounded-bl-none flex justify-center items-center col-span-3 md:col-span-1 h-[150px] md:h-[250px] lg:h-[300px]"
+          >
             <img
               src="/images/02_community.svg"
               alt="이미지 설명"
-              className="h-[150px] md:h-[200px] lg:h-[250px] w-auto"
+              className="h-[120px] md:h-[200px] lg:h-[250px] w-auto"
             />
           </div>
 
-          <div className="p-8 border border-yellow-400 rounded-tl-none rounded-tr-[24px] rounded-bl-[24px] rounded-br-none flex flex-col justify-center h-[200px] md:h-[250px] lg:h-[300px]">
-            <h3 className="font-medium text-left text-sm md:text-lg lg:text-2xl">
+          <div
+            className="p-4 md:p-6 lg:p-8 border border-yellow-400 rounded-tl-none rounded-tr-[24px] rounded-bl-[24px] rounded-br-none flex flex-col justify-center col-span-3 md:col-span-2 h-[150px] md:h-[250px] lg:h-[300px]"
+          >
+            <h3 className="font-medium text-left text-lg md:text-xl lg:text-2xl">
               소모임과 커뮤니티로 함께 성장하는 경험
             </h3>
-            <p className="text-gray-600 mt-4 text-left text-xs md:text-sm lg:text-lg font-light">
+            <p className="text-gray-600 mt-2 md:mt-3 lg:mt-4 text-left text-sm md:text-base lg:text-lg font-light">
               같은 고민을 가진 사람들과 소통하고, <br />
               서로의 성장을 응원하며 소속감을 느껴보세요.
             </p>
           </div>
 
-          {/* Third Feature */}
-          <div className="p-8 border border-yellow-400 rounded-tl-none rounded-tr-[24px] rounded-bl-[24px] rounded-br-none flex flex-col justify-center h-[200px] md:h-[250px] lg:h-[300px]">
-            <h3 className="font-medium text-left text-sm md:text-lg lg:text-2xl">
+          {/* Third Section: Text on the left (75%) and Image on the right (25%) */}
+          <div
+            className="p-4 md:p-6 lg:p-8 border border-yellow-400 rounded-tl-none rounded-tr-[24px] rounded-bl-[24px] rounded-br-none flex flex-col justify-center col-span-3 md:col-span-2 h-[150px] md:h-[250px] lg:h-[300px]"
+          >
+            <h3 className="font-medium text-left text-lg md:text-xl lg:text-2xl">
               AI 기반 맞춤형 취향, 직업 추천 및 상담
             </h3>
-            <p className="text-gray-600 mt-4 text-left text-xs md:text-sm lg:text-lg font-light">
-              사용자 성향에 맞춘 AI 직업 추천 기능과 가상 상담을 통해 개개인에
-              적합한 <br />
-              커리어 목표를 제안합니다. 이를 통해 진정한 나에게 맞는 커리어를
-              발견해 보세요!
+            <p className="text-gray-600 mt-2 md:mt-3 lg:mt-4 text-left text-sm md:text-base lg:text-lg font-light">
+              사용자 성향에 맞춘 AI 직업 추천 기능과 가상 상담을 통해 개개인에 적합한 <br />
+              커리어 목표를 제안합니다. 이를 통해 진정한 나에게 맞는 커리어를 발견해 보세요!
             </p>
           </div>
 
-          <div className="px-8 pt-8 pb-0 border border-yellow-400 rounded-tl-[24px] rounded-br-[24px] rounded-tr-none rounded-bl-none flex justify-center items-center h-[200px] md:h-[250px] lg:h-[300px]">
+          <div
+            className="px-4 md:px-6 lg:px-8 pt-4 md:pt-6 lg:pt-8 pb-0 border border-yellow-400 rounded-tl-[24px] rounded-br-[24px] rounded-tr-none rounded-bl-none flex justify-center items-center col-span-3 md:col-span-1 h-[150px] md:h-[250px] lg:h-[300px]"
+          >
             <img
               src="/images/03_ai.svg"
               alt="이미지 설명"
-              className="h-[150px] md:h-[200px] lg:h-[250px] w-auto"
+              className="h-[120px] md:h-[200px] lg:h-[250px] w-auto"
             />
           </div>
         </section>
