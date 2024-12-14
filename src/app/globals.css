@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  src: url(./fonts/Pretendard-Black.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  src: url(./fonts/Pretendard-ExtraBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  src: url(./fonts/Pretendard-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  src: url(./fonts/Pretendard-SemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  src: url(./fonts/Pretendard-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  src: url(./fonts/Pretendard-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  src: url(./fonts/Pretendard-Light.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  src: url(./fonts/Pretendard-ExtraLight.woff) format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  src: url(./fonts/Pretendard-Thin.woff) format("woff");
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --max-width: 1600px; /* Main content의 최대 너비 */
+  --page-width: 1920px; /* 전체 페이지 너비 */
+}
+
+/* 다크모드 */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Pretendard", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+@layer utilities {
+  .label-required::after {
+    content: " *";
+    color: #ff0000;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #1d2622;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #d6d6d6;
+  }
+
+  .truncate-2-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    word-break: break-word;
+  }
+
+  .truncate-3-lines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    word-break: break-word;
+  }
+}
