@@ -16,5 +16,5 @@ const nextConfig = {
     },
   };
   
-  module.exports = nextConfig; // 설정을 내보내기
+  export default nextConfig; // ES Module 방식으로 설정 내보내기
   
