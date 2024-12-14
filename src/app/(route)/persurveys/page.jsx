@@ -321,7 +321,7 @@ export default function PersonalitySurveyPage() {
           width={300}
           height={112}
           priority
-          className="mx-auto w-3/4 sm:w-full"
+          className="mx-auto w-3/4"
         />
         <p className="max-w-xs mx-auto text-base sm:text-xl text-gray-500 mt-6 sm:mt-12 px-4 py-4 rounded-full border border-gray-300">
           작성자: {nickname}

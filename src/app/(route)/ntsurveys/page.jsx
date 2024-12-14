@@ -307,7 +307,7 @@ export default function NtSurveyPage() {
           width={300}
           height={112}
           priority
-          className="mx-auto w-3/4 sm:w-full"
+          className="mx-auto w-3/4"
         />
 
         {/* 작성자 표시 */}
