@@ -96,8 +96,8 @@ export default function LoginPage() {
       </form>
 
       <div className="flex space-x-6 mt-6 text-gray-500 text-base">
-        <a href="#" className="hover:underline">아이디 찾기</a>
-        <a href="#" className="hover:underline">비밀번호 찾기</a>
+        <a href="/findId" className="hover:underline">아이디 찾기</a>
+        <a href="/findpassword" className="hover:underline">비밀번호 찾기</a>
         <Link href="/join" className="hover:underline">회원가입</Link>
       </div>
     </div>
