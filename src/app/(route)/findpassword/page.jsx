@@ -109,7 +109,7 @@ export default function ResetPasswordPage() {
   
     try {
       console.log("요청 데이터:", { userId, newPassword }); // 요청 데이터 확인
-      const response = await axiosInstance.post("/member/reset-password", {
+      const response = await axiosInstance.post("/members/reset-password", {
         userId,
         newPassword,
       });
