@@ -201,6 +201,7 @@ export default function PersonalitySurveyPage() {
   const [isLoading, setIsLoading] = useState(false); // 로딩 상태 추가
   const router = useRouter();
 
+  // 초기값을 빈 값으로 하고 싶다면 여기 부분도 주석처리
   const expectedResponses = {
     1: "네",
     2: "아니요",
@@ -215,6 +216,26 @@ export default function PersonalitySurveyPage() {
   };
 
   useEffect(() => {
+
+    // 모든 응답 초기값인 빈값
+    // const fetchSurveys = async () => {
+    //   try {
+    //     const response = await axiosInstance.get("/per-surveys");
+    //     const surveys = response.data;
+    
+    //     // 초기 응답을 빈 문자열로 설정
+    //     const initialResponses = {};
+    //     surveys.forEach((survey) => {
+    //       initialResponses[survey.perSurveyId] = ""; // 모든 응답의 초기값을 빈 문자열로 설정
+    //     });
+    
+    //     setSurveyData(surveys);
+    //     setResponses(initialResponses);
+    //   } catch (err) {
+    //     console.error("설문 데이터 로드 실패:", err);
+    //   }
+    // };
+    
     const fetchSurveys = async () => {
       try {
         const response = await axiosInstance.get("/per-surveys");
