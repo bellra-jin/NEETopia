@@ -116,7 +116,7 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="flex justify-center items-center h-[60vh] py-8 bg-white">
+    <div className="flex justify-center items-center h-[80vh] py-8 px-4 bg-white">
       <div className="w-full max-w-md">
         <h1 className="text-center text-3xl font-bold mb-8">회원가입</h1>
         <form onSubmit={handleSubmit} className="space-y-4">
